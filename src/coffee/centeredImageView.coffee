@@ -13,7 +13,6 @@ centeredImageView = React.createClass
 
     update: ->
         @forceUpdate()
-        console.log "@props.src: " + @props.model.get_image_uri()
 
     render: ->
         IMG_STYLE = {
@@ -30,7 +29,7 @@ centeredImageView = React.createClass
                 className: 'span4'
                 img
                     className: 'center-block' # not a bootstrap thing!
-                    src: @props.model.get_image_uri()
+                    src: null # TODO(tmarkvluwer): fill me in
                     style: IMG_STYLE
             div # empty right block
                 className: 'span4'

@@ -5,10 +5,6 @@ CenteredButtonView = require('./centeredButtonView') # notice the './' prefix ab
 model = require('./model') # creates new instance of model on import
 window.model = model
 
-onDeviceReady = () ->
-    console.log(navigator.camera)
-document.addEventListener("deviceready", onDeviceReady, false)
-
 # render the logo at top
 React.render(
     CenteredImage
